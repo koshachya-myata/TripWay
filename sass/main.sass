@@ -22,7 +22,7 @@ a
 	margin: auto
 	height: 100%	
 .nav
-	padding-top: 15%
+	padding-top: 200px
 	font-size: 12.4px
 	font-weight: 400
 	color: #E3D0FD
@@ -114,18 +114,18 @@ a
 			text-align: center
 			line-height: 1.63
 			width: 532px
-		&-button
-			font-size: 18px
-			font-weight: 400
-			line-height: 1.33
-			padding: 12px
-			display: inline-block
-			color: #fff
-			background-color: #fb4381
-			border-radius: 3px
-			box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25)
-		&-button:hover
-			transform: scale(1.1)
+.button
+	font-size: 18px
+	font-weight: 400
+	line-height: 1.33
+	padding: 12px
+	display: inline-block
+	color: #fff
+	background-color: #fb4381
+	border-radius: 3px
+	box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25)
+	&:hover
+		transform: scale(1.1)
 .advice
 	background-color: #fafafa
 	&-content
@@ -166,3 +166,71 @@ a
 			width: 240px
 			text-align: center
 			color: #8c8c8c
+	&__difficult
+		background-color: $purple
+		height: 145px
+		margin-top: 120px
+		&-box
+			height: 100%
+			width: 100%
+			display: flex
+			align-items: center
+		&-content
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			height: 27px
+			justify-content: space-between
+			align-items: center
+		&__text
+			color: #fff
+			font-size: 34px
+.destinations
+	background-color: #fafafa
+	&-content
+		padding-top: 96px
+	&__header
+		color: #3e3e3e
+		font-size: 34px
+	&__sections
+		margin-top: 62px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__row
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+	&__section
+		width: 364px
+		height: 459px
+		border-radius: 3px
+		box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15)
+		background-color: #ffffff
+		margin-top: 30px	
+		&__context
+			&-up
+				margin-top: 24px	
+				display: flex
+				align-items: center
+				margin-left: 22px
+			&__image
+				border-radius: 3px
+			&__header
+				font-size: 22px
+				color: #3e3e3e
+			&__price
+				font-size: 17px
+				color: $purple
+				margin-left: 10px
+			&__text
+				font-size: 14px
+				line-height: 1.47
+				color: #8c8c8c
+				width: 310px
+				margin: 21px 33px 22px 21px		
+			&__button
+				padding: 14px 19px 16px 19px
+				font-size: 16px
+				margin-left: 22px	
