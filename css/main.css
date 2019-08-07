@@ -1,3 +1,24 @@
+header { height: 100vh; background-image: url(../img/golden-gate-2.jpg); background-repeat: no-repeat; background-size: 100%; -webkit-transition: background-image 0.7s linear; transition: background-image 0.7s linear; }
 
+a { text-decoration: none; color: #E3D0FD; }
+
+.container { max-width: 1170px; margin: auto; height: 100%; }
+
+.nav { padding-top: 80px; font-size: 10px; font-weight: 400; color: #E3D0FD; }
+.nav__info { background-color: #433194; height: 30px; }
+.nav__info-content { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.nav__info__communication { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 250px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.nav__info__communication-icon { margin-right: 5px; }
+.nav__info__communication-email { text-transform: uppercase; }
+.nav__info__media { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 110px; -ms-flex-pack: distribute; justify-content: space-around; }
+.nav__main { background-color: #553CA9; height: 90px; }
+.nav__main-content { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.nav__main-logo { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 24px; color: #fff; }
+.nav__main-links { text-transform: uppercase; font-size: 14px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 600px; }
+.nav__main-link:hover { -webkit-transform: scale(1.2); transform: scale(1.2); }
+
+.header__slider { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 300px; }
+.header__slider-button { cursor: pointer; color: #fff; background-color: rgba(127, 127, 127, 0.5); font-size: 40px; width: 50px; height: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.header__slider-button:hover { -webkit-transform: scaleY(1.15); transform: scaleY(1.15); }
 
 /*# sourceMappingURL=main.css.map */
