@@ -1,6 +1,6 @@
-$purple: #653eb3
-$dark-purple: #5031a4
-
+@import "variables.sass"
+@import "nav.sass"
+@import "footer.sass"
 body
 	font-family: Roboto
 header
@@ -15,6 +15,38 @@ header
 a
 	text-decoration: none
 	color: #E3D0FD
+.context-header
+	color: #3e3e3e
+	font-size: 34px
+.round
+	border-radius: 50%
+.button
+	font-size: 18px
+	font-weight: 400
+	line-height: 1.33
+	padding: 12px
+	display: inline-block
+	color: #fff
+	background-color: #fb4381
+	border-radius: 3px
+	box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25)
+	&:hover
+		transform: scale(1.1)
+.button-o
+	border: 0
+	color: #fb4381
+	font-size: 18px
+	font-weight: 400
+	line-height: 1.33
+	padding: 12px
+	background-color: #fff
+	border-radius: 3px
+	box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25)
+	width: 118px
+	height: 51px
+	&:hover
+		transform: scale(1.1)
+
 .fa 
 	font-size: 14px
 .container
@@ -114,18 +146,6 @@ a
 			text-align: center
 			line-height: 1.63
 			width: 532px
-.button
-	font-size: 18px
-	font-weight: 400
-	line-height: 1.33
-	padding: 12px
-	display: inline-block
-	color: #fff
-	background-color: #fb4381
-	border-radius: 3px
-	box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25)
-	&:hover
-		transform: scale(1.1)
 .advice
 	background-color: #fafafa
 	&-content
@@ -135,7 +155,6 @@ a
 		align-items: center
 	&__header
 		font-size: 46px
-		color: #3e3e3e
 		text-align: center
 	&__text
 		max-width: 926px
@@ -157,7 +176,6 @@ a
 		&-header
 			margin-top: 30px
 			font-size: 22px
-			color: #3e3e3e
 			text-align: center
 		&-text
 			margin-top: 21px
@@ -187,11 +205,10 @@ a
 			font-size: 34px
 .destinations
 	background-color: #fafafa
+	padding-bottom: 98px
 	&-content
 		padding-top: 96px
 	&__header
-		color: #3e3e3e
-		font-size: 34px
 	&__sections
 		margin-top: 62px
 		display: flex
@@ -219,7 +236,6 @@ a
 				border-radius: 3px
 			&__header
 				font-size: 22px
-				color: #3e3e3e
 			&__price
 				font-size: 17px
 				color: $purple
@@ -234,3 +250,71 @@ a
 				padding: 14px 19px 16px 19px
 				font-size: 16px
 				margin-left: 22px	
+.discounts
+	background-color: #fff
+	&-content
+		width: 100%
+		display: flex
+		margin-top: 64px
+		margin-bottom: 58px
+		justify-content: space-between
+	&-header
+		margin-top: 10px
+	&-email
+		margin-right: 20px
+		width: 288px
+		height: 30px
+		outline: none
+		border: 0
+		border-bottom: 1px solid  #e1e1e1
+		color: #c6c6c6
+		font-size: 18px
+.testimonials
+	padding-top: 97px
+	background-color: #fafafa
+	&__header
+	&__cards
+		margin-top: 68px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__card
+		width: 560px
+		height: 230px
+		background-color: #fff
+		border-radius: 3px
+		box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15)
+		margin-bottom: 30px
+		&__content
+			padding-top: 30px
+			width: 503px
+			margin: 0 auto
+		&__context
+			width: 386px
+			float: right
+			&__text
+				color: #8c8c8c	
+				font-size: 15px
+				line-height: 1.47
+				padding-bottom: 25px
+				border-bottom: 1px solid #eaeaea
+				margin-bottom: 25px
+			&__author
+				display: inline
+				color: #3e3e3e
+				font-size: 15px
+				font-weight: 500
+			&__author-job
+				font-size: 15px
+				color: #3e3e3e
+.line 
+	height: 1px
+	opacity: 0.2
+	background-color: #ffffff
+@media (max-width: 510px) 
+	.testimonials__card
+		width: 460px
+		&__content
+			width: 460px
+		&__context
+			width: 330px
