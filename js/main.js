@@ -3,12 +3,8 @@ let nextBg = document.getElementById('next-bg');
 let header = document.getElementById('header');
 let sliderName = document.getElementById('slider-name');
 let sliderText = document.getElementById('slider-text');
-let sliderLink = document.getElementById('slider-link');;
-let slideCounter = 2
-console.log(prevBg);
-console.log(nextBg);
-console.log(header);
-console.log(sliderName);
+let sliderLink = document.getElementById('slider-link');
+let slideCounter = 2;
 prevBg.onclick = sliderLeft;
 nextBg.onclick = sliderRight;
 function changeSliderContext(c){
