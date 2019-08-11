@@ -53,65 +53,10 @@ a
 	max-width: 1170px
 	margin: auto
 	height: 100%	
-.nav
-	padding-top: 200px
-	font-size: 12.4px
-	font-weight: 400
-	color: #E3D0FD
-	&__info
-		background-color: $dark-purple
-		height: 40px
-		&-content
-			height: 100%
-			display: flex
-			justify-content: space-between
-		&__communication
-			height: 100%
-			display: flex
-			align-items: center
-			width: 260px
-			justify-content: space-between
-			&-icon
-				margin-right: 10px
-			&-email, &-phone
-				text-transform: uppercase
-				display: flex
-				align-items: center
-		&__media
-			height: 100%
-			display: flex
-			align-items: center
-			width: 200px
-			justify-content: space-around
-	&__main
-		background-color: $purple
-		height: 90px
-		&-content
-			height: 100%
-			display: flex
-			justify-content: space-between
-		&-logo
-			height: 100%
-			display: flex
-			align-items: center
-			font-size: 24px
-			color: #fff
-			&-img
-				margin-top: 10px
-		&-links
-			text-transform: uppercase
-			font-size: 14px
-			height: 100%
-			display: flex
-			justify-content: space-between
-			align-items: center
-			width: 600px
-		&-link:hover
-			transform: scale(1.2)
 .header__slider
 	display: flex
 	justify-content: space-between
-	margin-top: 100px
+	margin-top: 200px
 	&-button
 		cursor: pointer
 		color: #fff
@@ -270,6 +215,7 @@ a
 		color: #c6c6c6
 		font-size: 18px
 .testimonials
+	padding-bottom: 130px
 	padding-top: 97px
 	background-color: #fafafa
 	&__header
@@ -312,9 +258,47 @@ a
 	opacity: 0.2
 	background-color: #ffffff
 @media (max-width: 510px) 
+	.header__slider__context
+		height: 170px
+	.header__slider
+		margin-top: 40%
 	.testimonials__card
 		width: 460px
 		&__content
 			width: 460px
 		&__context
 			width: 330px
+@media (max-width: 745px) 
+	.destinations__sections
+		justify-content: center
+	.advice__sections
+		align-items: center
+		flex-direction: column
+
+	.advice__difficult
+		height: 300px
+		&-content
+			height: 100%
+		&__text
+			text-align: center
+		&__button
+			margin: 0 auto
+
+	.testimonials__card
+		height: 350px
+		width: 600px
+		&__content
+			width: 330px
+		&__context
+			width: 330px
+			float: none
+	.discounts
+		&-content
+			display: block
+		&-header
+			margin-left: 3px
+			font-size: 24px
+			margin-bottom: 8px
+		&-email
+			width: 200px
+			margin-left: 3px

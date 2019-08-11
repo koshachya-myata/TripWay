@@ -40,10 +40,11 @@
 			<div class="nav__main">
 				<div class="container">
 					<div class="nav__main-content">
+						<img class="nav__main-hamburger" src="img/MenuIconpx.png" alt="click" id = "modal-open-button">
 						<div class="nav__main-logo">
 							<img class = "nav__main-logo-img" src="img/logo.svg" alt="logo" height="40" width="40"> TripWay
 						</div>
-						<div class="nav__main-links">
+						<div class="nav__main-links header__nav__main-links">
 							<a href="#" class="nav__main-link">Home</a>
 							<a href="#" class="nav__main-link">About</a>
 							<a href="#" class="nav__main-link">Destinations</a>
@@ -269,15 +270,15 @@
 		<div class="container">
 			<div class="footer__content">
 				<div class="footer__content__links">
-						<div class="nav__main-links">
-							<a href="#" class="nav__main-link">Home</a>
-							<a href="#" class="nav__main-link">About</a>
-							<a href="#" class="nav__main-link">Destinations</a>
-							<a href="#" class="nav__main-link">Gallery</a>
-							<a href="#" class="nav__main-link">Blog</a>
-							<a href="#" class="nav__main-link">Contants</a>
+						<div class="nav__main-links footer__nav__main-links">
+							<a href="#" class="nav__main-link footer__nav__main-link">Home</a>
+							<a href="#" class="nav__main-link footer__nav__main-link">About</a>
+							<a href="#" class="nav__main-link footer__nav__main-link">Destinations</a>
+							<a href="#" class="nav__main-link footer__nav__main-link">Gallery</a>
+							<a href="#" class="nav__main-link footer__nav__main-link">Blog</a>
+							<a href="#" class="nav__main-link footer__nav__main-link">Contants</a>
 						</div>
-						<div class="nav__info__media">
+						<div class="nav__info__media footer__nav__info__media">
 							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 							<a href="#"><img style="transform: scale(0.9); margin-top: 7px;" src="img/p.svg" alt="p"></a>
 							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -294,8 +295,30 @@
 			</div>
 		</div>
 	</footer>
-	
-
+	<div class="modal-menu"  id = "modal-menu">
+    	<div class="modal-menu-content">
+            <button class="modal-menu-content-close" id="modal-close-button">&times;</button>
+            <div class="nav__main-links modal__nav-links">
+				<a href="#" class="nav__main-link">Home</a>
+				<a href="#" class="nav__main-link">About</a>
+				<a href="#" class="nav__main-link">Destinations</a>
+				<a href="#" class="nav__main-link">Gallery</a>
+				<a href="#" class="nav__main-link">Blog</a>
+				<a href="#" class="nav__main-link">Contants</a>
+			</div>
+			<div class="nav__info__communication modal-menu__communication">
+				<span class="nav__info__communication-email">
+					<i class="fa fa-envelope nav__info__communication-icon" aria-hidden="true"></i>
+					<a href = "mailto:greedrussell@gmail.com">Info@tripway.com</a>
+				</span>
+				<span class="nav__info__communication-phone">
+					<i class="fa fa-phone nav__info__communication-icon" aria-hidden="true"></i>
+					<a href="tel:+3212334567">+321 233 4567</a>
+				</span>
+			</div>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src = "js/main.js"></script>
 </body>
 </html>
