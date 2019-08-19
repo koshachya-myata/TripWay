@@ -1,0 +1,43 @@
+@import "variables.sass"
+@import "nav.sass"
+@import "footer.sass"
+body
+	font-family: Roboto
+a
+	text-decoration: none
+	color: #E3D0FD
+.container
+	max-width: 1170px
+	margin: auto
+	height: 100%	
+.breadcrumbs
+	margin-top: 50px
+	color: #fb4381
+	font-size: 14px
+	&__item::after
+		margin-left: 5px
+		content: '\2192'
+		color: #BABABA
+		font-size: 10px
+		vertical-align: middle
+.gallery-header
+	color: #3e3e3e
+	font-size: 40px
+	margin-top: 23px
+.regions
+	margin-bottom: 20px
+	margin-top: 48px
+.regions-list
+	text-decoration: none
+	display: flex
+	font-size: 22px
+	max-width: 634px
+	justify-content: space-between
+	align-items: flex-end
+	padding-bottom: 5px
+	border-bottom: 3px solid #dcdcdc
+.region__link
+	color: #3e3e3e
+	padding: 3px
+	&__active
+		border-bottom: 3px solid #fb4381
