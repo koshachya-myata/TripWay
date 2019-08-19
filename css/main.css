@@ -140,5 +140,9 @@ a { text-decoration: none; color: #E3D0FD; }
   .destinations__header { text-align: center; } }
 @media(max-width: 1170px) { .advice__text { padding: 5px; }
   .testimonials__card { margin: 0 auto; margin-top: 30px; } }
+@media(max-width: 1191px) { .destinations__sections { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .destinations__section { margin: 30px 15px 0px 15px; }
+  .destinations__header { text-align: center; }
+  .testimonials__header { text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
