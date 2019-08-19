@@ -144,5 +144,6 @@ a { text-decoration: none; color: #E3D0FD; }
   .destinations__section { margin: 30px 15px 0px 15px; }
   .destinations__header { text-align: center; }
   .testimonials__header { text-align: center; } }
+.stop-scroll { position: fixed; width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
