@@ -19,3 +19,11 @@ function modalMenuOff(){
 	modal_menu.classList.remove('modal-menu_active');
 	body.classList.remove('stop-scroll');
 }
+
+	$(document).mouseup(function (e){
+		let menu = $("#modal-menu-content"); 
+		if (!menu.is(e.target) && menu.has(e.target).length === 0) { 
+			modalMenuOff(); 
+		console.log('click')
+		}
+	});
