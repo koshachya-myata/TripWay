@@ -80,6 +80,25 @@ a
 			flex-basis: 364px 
 		&:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9)
 			flex-basis: 266px 
+.pages
+	max-width: 255px
+	display: flex
+	justify-content: space-around
+	margin: 0 auto
+	margin-bottom: 90px
+	border-top: 3px solid #dcdcdc
+	&__item
+		font-size: 16px
+		margin-top: 15px
+		&__link
+			color: #3e3e3e
+			padding: 10px
+			&__active
+				padding-top: 13px 
+				border-top: 3px solid #fb4381
+		&__active
+			font-weight: bold
+
 @media (max-width: 1025px)
 	.galery__cards
 		justify-content: space-around
