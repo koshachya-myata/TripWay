@@ -2,6 +2,7 @@
 @import "nav.sass"
 @import "footer.sass"
 body
+	background-color: #fafafa
 	font-family: Roboto
 a
 	text-decoration: none
@@ -41,3 +42,67 @@ a
 	padding: 3px
 	&__active
 		border-bottom: 3px solid #fb4381
+.galery
+	margin-top: 30px
+	margin-bottom: 50px
+	&__cards
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__card
+		margin-top: 30px
+		box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15)
+		border-radius: 3px
+		max-width: 560px
+		background-color: #fff
+		&__img
+			max-width: 100%
+			height: auto
+			display: block
+			&:nth-child(1)
+			
+			&:nth-child(2)
+				
+		&__context
+			padding: 24px 26px 29px 21px
+			max-width: 560px
+			&__header
+				font-size: 22px
+				color: #3e3e3e
+			&__text
+				margin-top: 9px
+				font-size: 15px
+				color: #8c8c8c
+				line-height: 1.47
+		&:nth-child(1), &:nth-child(2)
+			flex-basis: 560px 
+		&:nth-child(3), &:nth-child(4), &:nth-child(5)
+			flex-basis: 364px 
+		&:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9)
+			flex-basis: 266px 
+@media (max-width: 1025px)
+	.galery__cards
+		justify-content: space-around
+	.galery__card
+		flex-basis: 364px !important
+	.gallery-header
+		padding-left: 6px
+	.breadcrumbs
+		padding-left: 3px
+@media (max-width: 414px)
+	.regions
+		margin-bottom: 0
+	.regions-list
+		font-size: 20px
+		flex-direction: column
+		align-items: center
+	.region
+		margin-top: 4px
+	.region__link__active
+		border: 0
+	.region__link__active:before
+		content: '\BB'
+		margin-right: 3px
+		color: #fb4381
+	.galery
+		margin-top: 10px
