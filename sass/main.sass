@@ -21,7 +21,7 @@ a
 .round
 	border-radius: 50%
 .button
-	min-width: 140px
+	text-align: center
 	font-size: 18px
 	font-weight: 400
 	line-height: 1.33
@@ -34,6 +34,7 @@ a
 	&:hover
 		transform: scale(1.1)
 .button-o
+	text-align: center
 	border: 0
 	color: #fb4381
 	font-size: 18px
@@ -86,11 +87,24 @@ a
 			font-size: 34px
 			font-weight: 500
 			color: #616161
+			flex: 0 0 240px
+			@media (max-width: 745px)
+				flex: 0
 		&-text
 			color: #8c8c8c
 			font-size: 16px
 			text-align: center
 			line-height: 1.63
+			padding: 0 30px
+			flex: 1 0
+			min-width: 0
+		&-button-wrapper
+			flex: 0 0 240px
+			text-align: right
+			@media (max-width: 745px)
+				flex: 0
+		&-button
+			min-width: 140px
 .advice
 	background-color: #fafafa
 	&-content
@@ -196,6 +210,7 @@ a
 				//width: 310px
 				//margin: 21px 33px 22px 21px		
 			&__button
+				max-width: 155px
 				padding: 14px 19px 16px 19px
 				font-size: 16px
 				margin-left: 22px	
@@ -259,6 +274,7 @@ a
 				color: #3e3e3e
 				font-size: 15px
 				font-weight: 500
+				margin-left: 27px
 			&__author-job
 				font-size: 15px
 				color: #3e3e3e
@@ -269,6 +285,24 @@ a
 @media (max-width: 510px)
 	.header__slider
 		margin-top: 40%
+@media (max-width: 800px)
+	.discounts
+		&-content
+			display: block
+		&-content form
+			margin-top: 20px
+			flex-direction: column
+			justify-content: space-between
+		&-button 
+			margin-top: 8px
+		&-header
+			text-align: center
+			margin-left: 3px
+			font-size: 26px
+			margin-bottom: 8px
+		&-email //width: ...
+			margin-left: 3px
+
 @media (max-width: 745px) 
 	.testimonials__card__img
 		display: block
@@ -297,22 +331,6 @@ a
 	.advice__sections
 		align-items: center
 		flex-direction: column
-	.discounts
-		&-content
-			display: block
-		&-content form
-			margin-top: 20px
-			flex-direction: column
-			justify-content: space-between
-		&-button 
-			margin-top: 8px
-		&-header
-			text-align: center
-			margin-left: 3px
-			font-size: 26px
-			margin-bottom: 8px
-		&-email //width: ...
-			margin-left: 3px
 @media (max-width: 900px)
 	.advice__difficult
 		height: 200px
@@ -360,12 +378,14 @@ a
 		text-align: center
 	.testimonials__header
 		text-align: center
-	.nav__main-content
-		padding: 0px 15px
 	.advice__difficult-content
 		padding: 0px 15px
 	.nav__info-content
 		padding: 0px 15px
+	.discounts-content
+		width: 80%
+		margin-left: auto
+		margin-right: auto
 .stop-scroll
 	position: fixed
 	width: 100%
