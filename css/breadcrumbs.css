@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.breadcrumbs {
+  margin-top: 50px;
+  color: #fb4381;
+  font-size: 14px; }
+  .breadcrumbs__item::after {
+    margin-left: 5px;
+    content: "→";
+    color: #BABABA;
+    font-size: 10px;
+    vertical-align: middle; }
+
+@media (max-width: 1025px) {
+  .breadcrumbs {
+    padding-left: 3px; } }
+
+/*# sourceMappingURL=breadcrumbs.css.map */

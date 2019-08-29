@@ -52,40 +52,18 @@ a { text-decoration: none; color: #E3D0FD; }
 
 .container { max-width: 1170px; margin: auto; height: 100%; }
 
-.gallery-header { color: #3e3e3e; font-size: 40px; margin-top: 23px; }
+.faq-header { color: #3e3e3e; font-size: 40px; margin-top: 23px; }
+@media (max-width: 1025px) { .faq-header { padding-left: 6px; } }
 
-.regions { margin-bottom: 20px; margin-top: 48px; }
+.faq { padding-bottom: 120px; margin-top: 25px; }
+.faq__item { margin-top: 30px; -webkit-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15); box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15); background-color: #fff; border-radius: 3px; color: #3e3e3e; }
+.faq__item__question { padding: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.faq__item__question__text { font-size: 18px; }
+.faq__item__answer { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 15px 30px 30px 30px; }
+.faq__item__answer .faq__item__indicator { padding-top: 3px; }
+.faq__item__answer__text { font-size: 16px; display: inline; line-height: 1.5; }
+.faq__item__indicator { font-size: 18px; color: #653eb3; margin-right: 10px; }
 
-.regions-list { text-decoration: none; display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 22px; max-width: 634px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; padding-bottom: 5px; border-bottom: 3px solid #dcdcdc; }
+.question-line { height: 1px; background-color: #e1e1e1; width: 95%; margin: 0 auto; }
 
-.region__link { color: #3e3e3e; padding: 3px; }
-.region__link__active { border-bottom: 3px solid #fb4381; }
-
-.galery { margin-top: 30px; margin-bottom: 50px; }
-.galery__cards { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-.galery__card { margin-top: 30px; -webkit-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15); box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15); border-radius: 3px; max-width: 560px; background-color: #fff; }
-.galery__card__img { max-width: 100%; height: auto; display: block; }
-.galery__card__context { padding: 24px 26px 29px 21px; max-width: 560px; }
-.galery__card__context__header { font-size: 22px; color: #3e3e3e; }
-.galery__card__context__text { margin-top: 9px; font-size: 15px; color: #8c8c8c; line-height: 1.47; }
-.galery__card:nth-child(1), .galery__card:nth-child(2) { -ms-flex-preferred-size: 560px; flex-basis: 560px; }
-.galery__card:nth-child(3), .galery__card:nth-child(4), .galery__card:nth-child(5) { -ms-flex-preferred-size: 364px; flex-basis: 364px; }
-.galery__card:nth-child(6), .galery__card:nth-child(7), .galery__card:nth-child(8), .galery__card:nth-child(9) { -ms-flex-preferred-size: 266px; flex-basis: 266px; }
-
-.pages { max-width: 255px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin: 0 auto; margin-bottom: 90px; border-top: 3px solid #dcdcdc; }
-.pages__item { font-size: 16px; margin-top: 15px; }
-.pages__item__link { color: #3e3e3e; padding: 10px; }
-.pages__item__link__active { padding-top: 13px; border-top: 3px solid #fb4381; }
-.pages__item__active { font-weight: bold; }
-
-@media (max-width: 1025px) { .galery__cards { -ms-flex-pack: distribute; justify-content: space-around; }
-  .galery__card { -ms-flex-preferred-size: 364px !important; flex-basis: 364px !important; }
-  .gallery-header { padding-left: 6px; } }
-@media (max-width: 414px) { .regions { margin-bottom: 0; }
-  .regions-list { font-size: 20px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .region { margin-top: 4px; }
-  .region__link__active { border: 0; }
-  .region__link__active:before { content: "»"; margin-right: 3px; color: #fb4381; }
-  .galery { margin-top: 10px; } }
-
-/*# sourceMappingURL=gallery.css.map */
+/*# sourceMappingURL=faq.css.map */

@@ -1,6 +1,7 @@
 @import "variables.sass"
 @import "nav.sass"
 @import "footer.sass"
+@import "breadcrumbs.sass"
 body
 	background-color: #fafafa
 	font-family: Roboto
@@ -11,16 +12,6 @@ a
 	max-width: 1170px
 	margin: auto
 	height: 100%	
-.breadcrumbs
-	margin-top: 50px
-	color: #fb4381
-	font-size: 14px
-	&__item::after
-		margin-left: 5px
-		content: '\2192'
-		color: #BABABA
-		font-size: 10px
-		vertical-align: middle
 .gallery-header
 	color: #3e3e3e
 	font-size: 40px
@@ -106,8 +97,6 @@ a
 		flex-basis: 364px !important
 	.gallery-header
 		padding-left: 6px
-	.breadcrumbs
-		padding-left: 3px
 @media (max-width: 414px)
 	.regions
 		margin-bottom: 0
