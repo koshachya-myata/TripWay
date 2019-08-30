@@ -24,6 +24,5 @@ function modalMenuOff(){
 		let menu = $("#modal-menu-content"); 
 		if (!menu.is(e.target) && menu.has(e.target).length === 0) { 
 			modalMenuOff(); 
-		console.log('click')
 		}
 	});

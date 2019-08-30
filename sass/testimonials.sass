@@ -1,0 +1,61 @@
+@import "variables.sass"
+@import "nav.sass"
+@import "footer.sass"
+@import "breadcrumbs.sass"
+body
+	background-color: #fafafa
+	font-family: Roboto
+a
+	text-decoration: none
+	color: #E3D0FD
+.container
+	max-width: 1170px
+	margin: auto
+	height: 100%	
+.testimonials-header
+	color: #3e3e3e
+	font-size: 40px
+	margin-top: 23px
+	@media (max-width: 1025px)
+		padding-left: 6px
+.testimonials
+	padding-bottom: 130px
+	padding-top: 97px
+	background-color: #fafafa
+	&__header
+	&__cards
+		margin-top: 68px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__card
+		max-width: 560px	
+		background-color: #fff
+		border-radius: 3px
+		box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15)
+		margin-bottom: 30px
+		padding: 10px 12px 25px 12px
+		&__content
+			padding-top: 30px
+			margin: 0 auto
+		&__context
+			float: right
+			&__text
+				color: #8c8c8c	
+				font-size: 15px
+				line-height: 1.47
+				padding-bottom: 25px
+				border-bottom: 1px solid #eaeaea
+				margin-bottom: 25px
+				max-width: 386px
+				margin-left: 27px
+				margin-right: 31px
+			&__author
+				display: inline
+				color: #3e3e3e
+				font-size: 15px
+				font-weight: 500
+				margin-left: 27px
+			&__author-job
+				font-size: 15px
+				color: #3e3e3e
