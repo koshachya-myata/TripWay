@@ -56,7 +56,7 @@ body { background-color: #fafafa; font-family: Roboto; }
 
 a { text-decoration: none; color: #E3D0FD; }
 
-.container { max-width: 1170px; margin: auto; height: 100%; }
+.container { padding: 0 15px; max-width: 1170px; margin: auto; height: 100%; }
 
 .gallery-header { color: #3e3e3e; font-size: 40px; margin-top: 23px; }
 
@@ -85,12 +85,12 @@ a { text-decoration: none; color: #E3D0FD; }
 .pages__item__active { font-weight: bold; }
 
 @media (max-width: 1025px) { .galery__cards { -ms-flex-pack: distribute; justify-content: space-around; }
-  .galery__card { -ms-flex-preferred-size: 364px !important; flex-basis: 364px !important; }
-  .gallery-header { padding-left: 6px; } }
+  .galery__card { -ms-flex-preferred-size: 364px !important; flex-basis: 364px !important; } }
 @media (max-width: 414px) { .regions { margin-bottom: 0; }
   .regions-list { font-size: 20px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .region { margin-top: 4px; }
   .region__link__active { border: 0; }
   .region__link__active:before { content: "»"; margin-right: 3px; color: #fb4381; }
   .galery { margin-top: 10px; } }
+
 /*# sourceMappingURL=gallery.css.map */

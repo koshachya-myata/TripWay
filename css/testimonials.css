@@ -56,10 +56,9 @@ body { background-color: #fafafa; font-family: Roboto; }
 
 a { text-decoration: none; color: #E3D0FD; }
 
-.container { max-width: 1170px; margin: auto; height: 100%; }
+.container { padding: 0 15px; max-width: 1170px; margin: auto; height: 100%; }
 
 .testimonials-header { color: #3e3e3e; font-size: 40px; margin-top: 23px; }
-@media (max-width: 1025px) { .testimonials-header { padding-left: 6px; } }
 
 .testimonials { padding-bottom: 130px; padding-top: 97px; background-color: #fafafa; }
 .testimonials__cards { margin-top: 68px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
