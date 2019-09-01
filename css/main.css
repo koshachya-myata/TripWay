@@ -100,8 +100,8 @@ a { text-decoration: none; color: #E3D0FD; }
 .destinations__sections { margin-top: 62px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 .destinations__sections__row { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 .destinations__section { border-radius: 3px; -webkit-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15); box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15); background-color: #ffffff; margin-top: 30px; position: relative; overflow: hidden; }
-.destinations__section__context { padding-bottom: 18px; }
-.destinations__section__context-up { margin-top: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 22px; }
+.destinations__section__context { padding-bottom: 18px; padding-top: 24px; }
+.destinations__section__context-up { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 22px; }
 .destinations__section__context__image { border-radius: 3px; max-width: 100%; height: auto; display: block; }
 .destinations__section__context__header { font-size: 22px; }
 .destinations__section__context__price { font-size: 17px; color: #653eb3; margin-left: 10px; }
