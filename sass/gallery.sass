@@ -41,20 +41,19 @@ a
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
+		align-items: center
 	&__card
-		margin-top: 30px
+		margin: 30px 5px 0px 5px
 		box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15)
 		border-radius: 3px
 		max-width: 560px
+		width: 100%
 		background-color: #fff
 		&__img
 			max-width: 100%
 			height: auto
 			display: block
-			&:nth-child(1)
-			
-			&:nth-child(2)
-				
+		&__img-container
 		&__context
 			padding: 24px 26px 29px 21px
 			max-width: 560px
@@ -66,12 +65,15 @@ a
 				font-size: 15px
 				color: #8c8c8c
 				line-height: 1.47
+
 		&:nth-child(1), &:nth-child(2)
-			flex-basis: 560px 
+			width: 100%
 		&:nth-child(3), &:nth-child(4), &:nth-child(5)
-			flex-basis: 364px 
+			width: 30%
+			min-width: 200px
 		&:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9)
-			flex-basis: 266px 
+			width: 23%
+			min-width: 150px
 .pages
 	max-width: 255px
 	display: flex
@@ -91,11 +93,9 @@ a
 		&__active
 			font-weight: bold
 
-@media (max-width: 1025px)
+@media (max-width: 1200px)
 	.galery__cards
 		justify-content: space-around
-	.galery__card
-		flex-basis: 364px !important
 @media (max-width: 414px)
 	.regions
 		margin-bottom: 0
