@@ -34,25 +34,32 @@ a
 	padding: 3px
 	&__active
 		border-bottom: 3px solid #fb4381
-.galery
+.gallery
 	margin-top: 30px
 	margin-bottom: 50px
 	&__cards
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-between
-		align-items: center
+		width: 100%
 	&__card
-		margin: 30px 5px 0px 5px
+		flex: 1 0
+		min-width: 100%
+		margin-bottom: 30px
 		box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15)
 		border-radius: 3px
-		max-width: 560px
-		width: 100%
 		background-color: #fff
+		@media(min-width: 768px)
+			&--1
+				min-width: 50%
+			&--2
+				min-width: 33%
+			&--3
+				min-width: 25%
 		&__img
 			max-width: 100%
 			height: auto
 			display: block
+			width: 100% // мой костыль, ты не правильно адаптировал, почитай про object-fit
 		&__img-container
 		&__context
 			padding: 24px 26px 29px 21px
@@ -65,15 +72,6 @@ a
 				font-size: 15px
 				color: #8c8c8c
 				line-height: 1.47
-
-		&:nth-child(1), &:nth-child(2)
-			width: 100%
-		&:nth-child(3), &:nth-child(4), &:nth-child(5)
-			width: 30%
-			min-width: 200px
-		&:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9)
-			width: 23%
-			min-width: 150px
 .pages
 	max-width: 255px
 	display: flex
@@ -88,13 +86,13 @@ a
 			color: #3e3e3e
 			padding: 10px
 			&__active
-				padding-top: 13px 
+				padding-top: 13px
 				border-top: 3px solid #fb4381
 		&__active
 			font-weight: bold
 
 @media (max-width: 1200px)
-	.galery__cards
+	.gallery__cards
 		justify-content: space-around
 @media (max-width: 414px)
 	.regions
@@ -111,5 +109,5 @@ a
 		content: '\BB'
 		margin-right: 3px
 		color: #fb4381
-	.galery
+	.gallery
 		margin-top: 10px
