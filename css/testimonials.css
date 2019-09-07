@@ -38,7 +38,7 @@ footer { background-color: #653eb3; }
 
 .footer__content { padding-top: 61px; }
 .footer__content__links { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-bottom: 41px; }
-.footer__content__contact { margin-top: 43px; margin-bottom: 62px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #dfdaed; font-size: 16px; }
+.footer__content__contact { margin-top: 43px; padding-bottom: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #dfdaed; font-size: 16px; }
 
 .line { height: 1px; opacity: 0.2; background-color: #ffffff; }
 
