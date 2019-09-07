@@ -43,6 +43,7 @@ a
 		width: 100%
 	&__card
 		flex: 1 0
+		margin-right: 28px
 		min-width: 100%
 		margin-bottom: 30px
 		box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15)
@@ -50,11 +51,17 @@ a
 		background-color: #fff
 		@media(min-width: 768px)
 			&--1
-				min-width: 50%
+				min-width: calc(50% - 28px)
+				&:last-child
+					margin-right: 0
 			&--2
-				min-width: 33%
+				min-width: calc(33% - 28px)
+				&:last-child
+					margin-right: 0
 			&--3
-				min-width: 25%
+				min-width: calc(25% - 28px)
+				&:last-child
+					margin-right: 0
 		&__img
 			max-width: 100%
 			height: auto
