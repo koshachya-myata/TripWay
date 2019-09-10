@@ -101,5 +101,4 @@ a { text-decoration: none; color: #E3D0FD; }
   .region__link__active { border: 0; }
   .region__link__active:before { content: "»"; margin-right: 3px; color: #fb4381; }
   .gallery { margin-top: 10px; } }
-
 /*# sourceMappingURL=gallery.css.map */
