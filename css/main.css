@@ -109,7 +109,7 @@ a { text-decoration: none; color: #E3D0FD; }
 .destinations__section__context__button { max-width: 155px; padding: 14px 19px 16px 19px; font-size: 16px; margin-left: 22px; }
 
 .discounts { background-color: #fff; }
-.discounts-content { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 64px; margin-bottom: 58px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.discounts-content { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; padding-top: 64px; padding-bottom: 58px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 .discounts-content form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .discounts-header { margin-top: 10px; }
 .discounts-email { margin-right: 20px; width: 288px; height: 30px; outline: none; border: 0; border-bottom: 1px solid #e1e1e1; color: #000; font-size: 18px; }
