@@ -221,8 +221,10 @@ a
 		display: flex
 		justify-content: flex-end
 		align-items: center
+
 	&-header
 		margin-top: 10px
+	&-form
 	&-email
 		margin-right: 20px
 		width: 288px
@@ -291,9 +293,8 @@ a
 			margin-left: 3px
 			font-size: 26px
 			margin-bottom: 8px
-		&-email //width: ...
+		&-email 
 			margin-left: 3px
-
 @media (max-width: 745px) 
 	.testimonials__card__img
 		display: block
@@ -375,3 +376,12 @@ a
 .stop-scroll
 	position: fixed
 	width: 100%
+@media(max-width: 316px)
+	.discounts
+		&-content
+			width: 100%
+			margin: 0
+		&-form
+			width: 100%
+		&-email 
+			width: 90%

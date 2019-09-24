@@ -1,21 +1,28 @@
 @import "variables.sass"
 footer
 	background-color: $purple
-.footer__content
-	padding-top: 61px
-	&__links
-		display: flex
-		justify-content: space-between
-		align-items: center
-		padding-bottom: 41px
-	&__contact
-		margin-top: 43px
-		padding-bottom: 40px
-		display: flex
-		justify-content: space-between
-		align-items: center
-		color: #dfdaed
-		font-size: 16px
+.footer
+	&__content
+		padding-top: 61px
+		&__links
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding-bottom: 41px
+		&__contact
+			margin-top: 43px
+			padding-bottom: 40px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			color: #dfdaed
+			font-size: 16px
+			&__addres
+				margin-right: 20px
+	&__nav
+		&__main-links
+			margin-right: 20px
+		&__info__media
 .line 
 	height: 1px
 	opacity: 0.2
@@ -30,8 +37,12 @@ img.soc-links
 	margin-top: 7px
 	@media (max-width: 600px) 
 		transform: scale(1.4)
-
-@media (max-width: 600px) 
+@media (max-width: 393px)
+	.footer__nav__info__media
+		flex-flow: column 
+		& a
+			padding-top: 5px
+@media (max-width: 650px) 
 	.footer__nav__main-links
 		display: flex
 		flex-direction: column
