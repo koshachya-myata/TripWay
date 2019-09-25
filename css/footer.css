@@ -10,11 +10,7 @@ footer { background-color: #653eb3; }
 
 .line { height: 1px; opacity: 0.2; background-color: #ffffff; }
 
-.soc-links { font-size: 22px; padding: 0 10px; }
-@media (max-width: 600px) { .soc-links { font-size: 20px; } }
-
-img.soc-links { -webkit-transform: scale(1.45); transform: scale(1.45); margin-top: 7px; }
-@media (max-width: 600px) { img.soc-links { -webkit-transform: scale(1.4); transform: scale(1.4); } }
+.soc-links { margin-top: 7px; -webkit-transform: scale(1.3); transform: scale(1.3); }
 
 @media (max-width: 393px) { .footer__nav__info__media { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; }
   .footer__nav__info__media a { padding-top: 5px; } }
