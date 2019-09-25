@@ -179,19 +179,18 @@ a
 		background-color: #ffffff
 		margin-top: 30px
 		position: relative
-		overflow: hidden	
+		overflow: hidden
+		&__image
+			max-width: 100%
+			height: auto
+			display: block	
 		&__context
 			padding-bottom: 18px
 			padding-top: 24px
+			margin-left: 22px
 			&-up	
 				display: flex
 				align-items: center
-				margin-left: 22px
-			&__image
-				border-radius: 3px
-				max-width: 100%
-				height: auto
-				display: block
 			&__header
 				font-size: 22px
 			&__price
@@ -202,13 +201,10 @@ a
 				font-size: 14px
 				line-height: 1.47
 				color: #8c8c8c
-				//width: 310px
-				//margin: 21px 33px 22px 21px		
 			&__button
 				max-width: 155px
 				padding: 14px 19px 16px 19px
 				font-size: 16px
-				margin-left: 22px	
 .discounts
 	background-color: #fff
 	&-content
@@ -345,7 +341,7 @@ a
 	-webkit-line-clamp: 3
 	-webkit-box-orient: vertical
 	max-width: 310px
-	margin: 21px 33px 22px 21px	
+	margin: 21px 33px 22px 0px
 @media(max-width: 976px)
 	.advice__sections
 		justify-content: center
