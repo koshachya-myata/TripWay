@@ -55,6 +55,8 @@
       width: 600px; }
     .nav__main-link:hover {
       transform: scale(1.2); }
+    .nav__main-link__hide {
+      display: none; }
     .nav__main-hamburger {
       display: none; }
 

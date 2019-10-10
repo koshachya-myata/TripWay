@@ -4,9 +4,23 @@ let header = document.getElementById('header');
 let sliderName = document.getElementById('slider-name');
 let sliderText = document.getElementById('slider-text');
 let sliderLink = document.getElementById('slider-link');
+let hideList = document.getElementById('nav__main__hides');
+let aboutHide = document.getElementById('nav__main__hides-link-about');
+let about = document.getElementById('nav__main-link__active');
+
 let slideCounter = 2;
+hideList.onmouseover = unHide;
+hideList.onmouseout = hide;
 prevBg.onclick = sliderLeft;
 nextBg.onclick = sliderRight;
+function unHide(){
+	aboutHide.style="display: inline-block; margin-top: 8px";
+	hideList.style = "margin-top: 22px"
+}
+function hide(){
+	aboutHide.style="display: none;";
+	hideList.style = "margin-top: 0px"
+}
 function changeSliderContext(c){
 	switch (c) {
 		case 1:

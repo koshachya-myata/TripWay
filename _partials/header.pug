@@ -31,8 +31,12 @@
           |  TripWay
         .nav__main-links.header__nav__main-links
           a.nav__main-link(href='index.html') Home
-          a.nav__main-link(href='faq.html') About
+          ul.nav__main__hides#nav__main__hides
+            li
+              a.nav__main-link.nav__main-link__active.nav__main-link__about#nav__main-link__active(href='faq.html') About
+            li
+              a.nav__main-link.nav__main-link__hide#nav__main__hides-link-about(href='faq.html') About
           a.nav__main-link(href='destinations.html') Destinations
-          a.nav__main-link(href='gallery.html') Gallery
+          a.nav__main-link.nav__main-link__active.nav__main-link__about(href='gallery.html') Gallery
           a.nav__main-link(href='blog.html') Blog
           a.nav__main-link(href='contacts.html') Contants

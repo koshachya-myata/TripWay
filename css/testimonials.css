@@ -16,6 +16,7 @@
 .nav__main-logo-img { margin-top: 10px; }
 .nav__main-links { text-transform: uppercase; font-size: 14px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 600px; }
 .nav__main-link:hover { -webkit-transform: scale(1.2); transform: scale(1.2); }
+.nav__main-link__hide { display: none; }
 .nav__main-hamburger { display: none; }
 
 .modal-menu { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); -webkit-transition: 0.5s; transition: 0.5s; -webkit-transform-origin: left center; transform-origin: left center; -webkit-transform: scaleX(0); transform: scaleX(0); opacity: 0; }
