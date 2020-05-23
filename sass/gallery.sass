@@ -1,0 +1,120 @@
+@import "variables.sass"
+@import "nav.sass"
+@import "footer.sass"
+@import "breadcrumbs.sass"
+body
+	background-color: #fafafa
+	font-family: Roboto
+a
+	text-decoration: none
+	color: #E3D0FD
+.container
+	padding: 0 15px
+	max-width: 1170px
+	margin: auto
+	height: 100%	
+.gallery-header
+	color: #3e3e3e
+	font-size: 40px
+	margin-top: 23px
+.regions
+	margin-bottom: 20px
+	margin-top: 48px
+.regions-list
+	text-decoration: none
+	display: flex
+	font-size: 22px
+	max-width: 634px
+	justify-content: space-between
+	align-items: flex-end
+	padding-bottom: 5px
+	border-bottom: 3px solid #dcdcdc
+.region__link
+	color: #3e3e3e
+	padding: 3px
+	&__active
+		border-bottom: 3px solid #fb4381
+.gallery
+	margin-top: 30px
+	margin-bottom: 50px
+	&__cards
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+	&__card
+		flex: 1 0
+		margin-right: 28px
+		min-width: 100%
+		margin-bottom: 30px
+		box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15)
+		border-radius: 3px
+		background-color: #fff
+		@media(min-width: 768px)
+			&--1
+				min-width: calc(50% - 28px)
+				&:last-child
+					margin-right: 0
+			&--2
+				min-width: calc(33% - 28px)
+				&:last-child
+					margin-right: 0
+			&--3
+				min-width: calc(25% - 28px)
+				&:last-child
+					margin-right: 0
+		&__img
+			max-width: 100%
+			height: auto
+			display: block
+			width: 100% // мой костыль, ты не правильно адаптировал, почитай про object-fit
+		&__img-container
+		&__context
+			padding: 24px 26px 29px 21px
+			max-width: 560px
+			&__header
+				font-size: 22px
+				color: #3e3e3e
+			&__text
+				margin-top: 9px
+				font-size: 15px
+				color: #8c8c8c
+				line-height: 1.47
+.pages
+	max-width: 255px
+	display: flex
+	justify-content: space-around
+	margin: 0 auto
+	margin-bottom: 90px
+	border-top: 3px solid #dcdcdc
+	&__item
+		font-size: 16px
+		margin-top: 15px
+		&__link
+			color: #3e3e3e
+			padding: 10px
+			&__active
+				padding-top: 13px
+				border-top: 3px solid #fb4381
+		&__active
+			font-weight: bold
+
+@media (max-width: 1200px)
+	.gallery__cards
+		justify-content: space-around
+@media (max-width: 414px)
+	.regions
+		margin-bottom: 0
+	.regions-list
+		font-size: 20px
+		flex-direction: column
+		align-items: center
+	.region
+		margin-top: 4px
+	.region__link__active
+		border: 0
+	.region__link__active:before
+		content: '\BB'
+		margin-right: 3px
+		color: #fb4381
+	.gallery
+		margin-top: 10px

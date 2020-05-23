@@ -1,0 +1,175 @@
+extends ../_layouts/main
+block inHead
+	link(rel = "stylesheet" href = "css/main.css")
+	title TripWay
+block header
+	.header__slider
+		a#prev-bg.prev.header__slider-button &#x276E;
+		a#next-bg.next.header__slider-button &#x276F;
+	.header__slider__context
+		.container
+			.header__slider__context-content
+				#slider-name.header__slider__context-name San-Fracisco
+				#slider-text.header__slider__context-text
+					| San-Fracisco fermentum tortor non enim aliquet condimentum. Nam aliquam pretium sem feugiat. Duis sem est, viverra eu interdum.
+				.header__slider__context-button-wrapper
+					a#slider-link.header__slider__context-button.button(href='https://mail.yandex.ru') More About This
+block content
+	.advice
+		.container
+			.advice-content
+				h2.advice__header Advice For Everyone
+				p.advice__text
+					| Vestibulum liero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nib Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vesum ante ipsum primis in faucibus orci luctus et ultrices posuere cubisse sollicitudin velit sed leo. Ut pharetra augue nec auguem elit magna.
+				.advice__sections
+					.advice__section
+						img.advice__section-image(src='img/map.svg' alt='map')
+						h4.advice__section-header.context-header Route Selection
+						.advice__section-text
+							| Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.
+					.advice__section
+						img.advice__section-image(src='img/help.svg' alt='help')
+						h4.advice__section-header.context-header 24/7 Support
+						.advice__section-text
+							| Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.
+					.advice__section
+						img.advice__section-image(src='img/earth.svg' alt='earth')
+						h4.advice__section-header.context-header Wide Choice
+						.advice__section-text
+							| Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.
+					.advice__section
+						img.advice__section-image(src='img/plane.svg' alt='plane')
+						.advice__section-header.context-header Buy Tickets
+						.advice__section-text
+							| Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.
+		.advice__difficult
+			.container.advice__difficult-box
+				.advice__difficult-content
+					span.advice__difficult__text You need to make a difficult route for advice?
+					a.advice__difficult__button.button(href='#') Contact Us For This
+	// advice
+	.destinations
+		.container
+			.destinations-content
+				h3.destinations__header.context-header Popular Destinations
+				.destinations__sections
+					.destinations__section
+						div.destinations__section__image
+						.destinations__section__context
+							.destinations__section__context-up
+								h4.destinations__section__context__header Melbourne
+								span.destinations__section__context__price
+									| from 1400$
+							.cope_text.line-clamp
+								p.destinations__section__context__text
+									| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+							a.destinations__section__context__button.button(href='#') More About This
+					.destinations__section
+						div.destinations__section__image
+						.destinations__section__context
+							.destinations__section__context-up
+								h4.destinations__section__context__header Chicago
+								span.destinations__section__context__price
+									| from 900$
+							.cope_text.line-clamp
+								p.destinations__section__context__text
+									| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+							a.destinations__section__context__button.button(href='#') More About This
+					.destinations__section
+						div.destinations__section__image
+						.destinations__section__context
+							.destinations__section__context-up
+								h4.destinations__section__context__header Westminster
+								span.destinations__section__context__price
+									| from 1200$
+							.cope_text.line-clamp
+								p.destinations__section__context__text
+									| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+							a.destinations__section__context__button.button(href='#') More About This
+					.destinations__section
+						div.destinations__section__image
+						.destinations__section__context
+							.destinations__section__context-up
+								h4.destinations__section__context__header Venesia
+								span.destinations__section__context__price
+									| from 1600$
+							.cope_text.line-clamp
+								p.destinations__section__context__text
+									| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+							a.destinations__section__context__button.button(href='#') More About This
+					.destinations__section
+						div.destinations__section__image
+						.destinations__section__context
+							.destinations__section__context-up
+								h4.destinations__section__context__header New York
+								span.destinations__section__context__price
+									| from 1700$
+							.cope_text.line-clamp
+								p.destinations__section__context__text
+									| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+							a.destinations__section__context__button.button(href='#') More About This
+					.destinations__section
+						div.destinations__section__image
+						.destinations__section__context
+							.destinations__section__context-up
+								h4.destinations__section__context__header Istanbul
+								span.destinations__section__context__price
+									| from 1300$
+							.cope_text.line-clamp
+								p.destinations__section__context__text
+									| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+							a.destinations__section__context__button.button(href='#') More About This
+	.discounts
+		.container
+			.discounts-content
+				h4.discounts-header.context-header Love discounts? Subscribe to newsletter!
+				form.discounts-form(action='mailto:someone@example.com' method='post' enctype='text/plain')
+					input.discounts-email(type='text' name='mail' placeholder='Your email')
+					input.button-o.discounts-button(type='submit' value='Subscribe')
+	.testimonials
+		.container
+			.testimonials-content
+				.testimonials__header.context-header Testimonials
+				.testimonials__cards
+					.testimonials__card
+						.testimonials__card__content
+							img.round.testimonials__card__img(src='img/card1.png' alt='photo')
+							.testimonials__card__context
+								p.testimonials__card__context__text
+									| Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum sed faucibus felis fringilla.
+								h6.testimonials__card__context__author Marco Polo,
+								span.testimonials__card__context__author-job
+									| partner sales.
+					// //card
+					.testimonials__card
+						.testimonials__card__content
+							img.round.testimonials__card__img(src='img/card2.png' alt='photo')
+							.testimonials__card__context
+								p.testimonials__card__context__text
+									| Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum sed faucibus felis fringilla.
+								h6.testimonials__card__context__author Marco Polo,
+								span.testimonials__card__context__author-job
+									| partner sales.
+					// //card
+					.testimonials__card
+						.testimonials__card__content
+							img.round.testimonials__card__img(src='img/card3.png' alt='photo')
+							.testimonials__card__context
+								p.testimonials__card__context__text
+									| Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum sed faucibus felis fringilla.
+								h6.testimonials__card__context__author Marco Polo,
+								span.testimonials__card__context__author-job
+									| partner sales.
+					// //card
+					.testimonials__card
+						.testimonials__card__content
+							img.round.testimonials__card__img(src='img/card4.png' alt='photo')
+							.testimonials__card__context
+								p.testimonials__card__context__text
+									| Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum sed faucibus felis fringilla.
+								h6.testimonials__card__context__author Marco Polo,
+								span.testimonials__card__context__author-job
+									| partner sales.
+					// //card
+block scripts
+	script(src='js/main.js')

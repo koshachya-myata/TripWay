@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,YAAY;EACX,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,IAAI;EACf,yBAAc;IACb,WAAW,EAAE,GAAG;IAChB,OAAO,EAAE,GAAO;IAChB,KAAK,EAAE,OAAO;IACd,SAAS,EAAE,IAAI;IACf,cAAc,EAAE,MAAM;;AACxB,0BAA0B;EACzB,YAAY;IACX,YAAY,EAAE,GAAG",
+"sources": ["../sass/breadcrumbs.sass"],
+"names": [],
+"file": "breadcrumbs.css"
+}

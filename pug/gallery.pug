@@ -1,0 +1,128 @@
+extends ../_layouts/main
+block inHead
+	link(rel = "stylesheet" href = "css/gallery.css")
+	title Gallery
+block content
+	.breadcrumbs
+		.container
+			.breadcrumbs__item Home
+	h1.gallery-header
+		.container
+			| Gallery of TripWay
+	.regions
+		.container
+			ul.regions-list
+				li.region
+					a.region__link.region__link__active(href='#') Europe
+				li.region
+					a.region__link(href='#') Africa
+				li.region
+					a.region__link(href='#') North America
+				li.region
+					a.region__link(href='#') South America
+				li.region
+					a.region__link(href='#') Australia
+	.gallery
+		.container
+			.gallery__cards
+				//- line 1
+				//- .gallery__card - нужен, только, чтобы с позиционировать элемент
+				//- .gallery__card.gallery__card--1
+				//- wrapper получает все стили
+				//- 	.gallery__card__wrapper
+				//- 		.gallery__card__img-container
+				//- 			img.gallery__card__img(src='img/layer-5.png')
+				//- 		.gallery__card__context
+				//- 			.gallery__card__context__header Melbourne
+				//- 			.gallery__card__context__text
+				//- 				| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+				.gallery__card.gallery__card--1
+					.gallery__card__wrapper
+						.gallery__card__img-container
+							img.gallery__card__img(src='img/layer-5.png')
+						.gallery__card__context
+							.gallery__card__context__header Melbourne
+							.gallery__card__context__text
+								| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+				.gallery__card.gallery__card--1
+					.gallery__card__wrapper
+						.gallery__card__img-container
+							img.gallery__card__img(src='img/layer-6.png')
+						.gallery__card__context
+							.gallery__card__context__header Westminster
+							.gallery__card__context__text
+								| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+				//- line 2
+				.gallery__card.gallery__card--2
+					.gallery__card__wrapper
+						.gallery__card__img-container
+							img.gallery__card__img(src='img/layer-5.png')
+						.gallery__card__context
+							.gallery__card__context__header Melbourne
+							.gallery__card__context__text
+								| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+				.gallery__card.gallery__card--2
+					.gallery__card__wrapper
+						.gallery__card__img-container
+							img.gallery__card__img(src='img/pic2.jpg')
+						.gallery__card__context
+							.gallery__card__context__header Chicago
+							.gallery__card__context__text
+								| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+				.gallery__card.gallery__card--2
+					.gallery__card__wrapper
+						.gallery__card__img-container
+							img.gallery__card__img(src='img/pic3.jpg')
+						.gallery__card__context
+							.gallery__card__context__header Westminster
+							.gallery__card__context__text
+								| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+				//- line 3
+				.gallery__card.gallery__card--3
+					.gallery__card__wrapper
+						.gallery__card__img-container
+							img.gallery__card__img(src='img/layer-5.png')
+						.gallery__card__context
+							.gallery__card__context__header Melbourne
+							.gallery__card__context__text
+								| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+				.gallery__card.gallery__card--3
+					.gallery__card__wrapper
+						.gallery__card__img-container
+							img.gallery__card__img(src='img/pic2.jpg')
+						.gallery__card__context
+							.gallery__card__context__header Chicago
+							.gallery__card__context__text
+								| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+				.gallery__card.gallery__card--3
+					.gallery__card__wrapper
+						.gallery__card__img-container
+							img.gallery__card__img(src='img/pic3.jpg')
+						.gallery__card__context
+							.gallery__card__context__header Westminster
+							.gallery__card__context__text
+								| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+				.gallery__card.gallery__card--3
+					.gallery__card__wrapper
+						.gallery__card__img-container
+							img.gallery__card__img(src='img/pic5.jpg')
+						.gallery__card__context
+							.gallery__card__context__header New York
+							.gallery__card__context__text
+								| Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+	ul.pages
+		li.pages__item
+			a.pages__item__link(href='#') 1
+		li.pages__item
+			a.pages__item__link(href='#') 2
+		li.pages__item
+			a.pages__item__link(href='#') 3
+		li.pages__item.pages__item__active
+			a.pages__item__link.pages__item__link__active(href='#') 4
+		li.pages__item
+			a.pages__item__link(href='#') 5
+		li.pages__item
+			a.pages__item__link(href='#') 6
+		li.pages__item
+			a.pages__item__link(href='#') 7
+
